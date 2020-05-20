@@ -6,7 +6,7 @@
 |------|----|-------|
 |email|string|null: false,add_index: true|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :groups_users
   has_many :groups,through: groups_users
@@ -15,7 +15,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ### Association
 has_many :groups_users
