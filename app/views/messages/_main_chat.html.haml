@@ -1,0 +1,22 @@
+.main_contents
+  
+  .main_header
+    .chat-main_group-info
+      .chat-main_group-info--name 
+        test
+      .chat-main_group-info--edit-button  
+        Edit
+      .chat-main_group-info--menber 
+        member:name
+      
+  .chat-main_message-list 
+    
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text",class:  "input-box__text",placeholder:  "type a message"}
+        %label{class: "input-box__image"}
+          =icon('fas','image')
+          %input{type:  "file",class: "input-box__image__file"}
+      %input{type: "submit",class: "submit-btn"}
